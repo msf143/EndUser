@@ -34,10 +34,6 @@ namespace API.Helpers
                 configuration.GetConnectionString("EndUserDatabaseConnection");
             });
 
-            //_configuration = builder.Services.BuildServiceProvider();
-            //_configuration.GetConnectionString("EndUserDatabaseConnection");
-
-
             builder.Services.AddLogging(loggingBuilder =>
             {
                 loggingBuilder.AddFilter(level => true);
