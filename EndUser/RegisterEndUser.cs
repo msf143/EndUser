@@ -47,7 +47,7 @@ namespace API.Functions
 
         [FunctionName("RegisterEndUser")]
         public async Task<IActionResult> Run(
-            [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = "register")] HttpRequest req,
+            [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = "register")] HttpRequest req,
             //[Blob("schemas/SchedulerSchema.json", FileAccess.Read)] Stream validationSchema),
             ILogger log)
         {
